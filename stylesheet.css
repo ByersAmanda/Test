@@ -1,0 +1,109 @@
+@import "https://startpages.github.io/startpages/Startpage_kopri-nb/style/normalize.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', monospace;
+}
+
+.content-container {
+  background-color: #161617;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information {
+  width: 25%;
+  /*border: 1px solid red;*/
+  display: flex;
+  justify-content: space-around;
+}
+
+#date,
+#time {
+  padding: 10px;
+  color: #f2ebee;
+}
+
+#day-message {
+  padding: 50px;
+}
+
+#time {
+  /*margin-left: auto;*/
+}
+
+.link-container {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 30%;
+  /*border: 1px solid red;*/
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*border: 1px solid white;*/
+  height: 50%;
+}
+
+ul h4,
+ul li a,
+h1 {
+  color: #f2ebee;
+}
+h4 {
+  border-bottom: 2px solid #f2ebee;
+  margin-bottom: 5px;
+}
+
+ul li a:hover {
+  margin-left: 10px;
+}
+
+ul li {
+  text-align: center;
+  padding: 2px;
+  width: 100%;
+}
+
+ul li a {
+  transition: 0.5s;
+  border-radius: 5px;
+  width: 100%;
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 880px) {
+  .link-container {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  ul {
+    width: 50%;
+    height: 20%;
+  }
+
+  .information {
+    flex-direction: column;
+    align-items: center;
+  }
+}
